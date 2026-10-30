@@ -1,0 +1,7 @@
+project: savantenvs/sqlite-vec
+target: rescore_shadow_corrupt
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/rescore_shadow_corrupt
+    libfuzzer: true

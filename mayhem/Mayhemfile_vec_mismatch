@@ -1,0 +1,8 @@
+project: savantenvs/sqlite-vec
+target: vec_mismatch
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/vec_mismatch/testsuite
+cmds:
+  - cmd: /mayhem/vec_mismatch
+    libfuzzer: true

@@ -1,0 +1,8 @@
+project: savantenvs/sqlite-vec
+target: shadow_corrupt
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/shadow_corrupt/testsuite
+cmds:
+  - cmd: /mayhem/shadow_corrupt
+    libfuzzer: true

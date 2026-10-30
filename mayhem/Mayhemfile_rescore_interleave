@@ -1,0 +1,7 @@
+project: savantenvs/sqlite-vec
+target: rescore_interleave
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/rescore_interleave
+    libfuzzer: true

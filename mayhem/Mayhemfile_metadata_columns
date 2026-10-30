@@ -1,0 +1,7 @@
+project: savantenvs/sqlite-vec
+target: metadata_columns
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/metadata_columns
+    libfuzzer: true

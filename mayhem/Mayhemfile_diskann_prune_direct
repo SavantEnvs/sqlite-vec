@@ -1,0 +1,8 @@
+project: savantenvs/sqlite-vec
+target: diskann_prune_direct
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/diskann_prune_direct
+    libfuzzer: true
+    dictionary: /mayhem/tests/fuzz/diskann.dict

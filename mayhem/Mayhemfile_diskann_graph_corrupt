@@ -1,0 +1,8 @@
+project: savantenvs/sqlite-vec
+target: diskann_graph_corrupt
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/diskann_graph_corrupt
+    libfuzzer: true
+    dictionary: /mayhem/tests/fuzz/diskann.dict

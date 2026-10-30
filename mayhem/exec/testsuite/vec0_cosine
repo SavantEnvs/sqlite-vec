@@ -1,0 +1,1 @@
+CREATE VIRTUAL TABLE v USING vec0(id integer primary key, a float[4] distance_metric=cosine, +note text); INSERT INTO v(id,a,note) VALUES (1,'[1,0,0,0]','x'),(2,'[0,1,0,0]','y'); SELECT id, distance, note FROM v WHERE a MATCH '[1,1,0,0]' AND k = 2

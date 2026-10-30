@@ -1,0 +1,8 @@
+project: savantenvs/sqlite-vec
+target: scalar_functions
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/scalar_functions
+    libfuzzer: true
+    dictionary: /mayhem/tests/fuzz/scalar-functions.dict

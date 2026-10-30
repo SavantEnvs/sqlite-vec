@@ -1,0 +1,1 @@
+SELECT vec_to_json(vec_add('[1,2]','[3,4]')), vec_to_json(vec_sub('[5,5]','[1,2]')), vec_to_json(vec_slice('[1,2,3,4]',1,3)), vec_distance_l2('[1,2]','[2,4]'), vec_distance_cosine('[1,0]','[0,1]'), vec_distance_l1('[1,2]','[3,4]')

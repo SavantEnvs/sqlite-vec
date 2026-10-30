@@ -1,0 +1,7 @@
+project: savantenvs/sqlite-vec
+target: rescore_quantize
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/rescore_quantize
+    libfuzzer: true

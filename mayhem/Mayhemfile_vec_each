@@ -1,0 +1,7 @@
+project: savantenvs/sqlite-vec
+target: vec_each
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/vec_each
+    libfuzzer: true

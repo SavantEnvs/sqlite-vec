@@ -1,0 +1,1 @@
+CREATE VIRTUAL TABLE v USING vec0(a int8[4], b bit[8], chunk_size=8); INSERT INTO v(rowid,a,b) VALUES (1,vec_int8('[1,2,3,4]'),vec_bit(x'ff')); UPDATE v SET a = vec_int8('[4,3,2,1]') WHERE rowid = 1; DELETE FROM v WHERE rowid = 1; SELECT count(*) FROM v

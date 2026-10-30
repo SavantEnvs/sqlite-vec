@@ -1,0 +1,7 @@
+project: savantenvs/sqlite-vec
+target: ivf_knn_deep
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/ivf_knn_deep
+    libfuzzer: true

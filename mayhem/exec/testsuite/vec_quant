@@ -1,0 +1,1 @@
+SELECT vec_quantize_binary('[1,-1,1,-1,1,-1,1,-1]'), vec_quantize_int8('[0.1,0.5,-0.5,1.0]','unit'), vec_distance_hamming(vec_bit(x'ff'),vec_bit(x'0f'))

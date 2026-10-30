@@ -1,0 +1,8 @@
+project: savantenvs/sqlite-vec
+target: diskann_blob_truncate
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/diskann_blob_truncate
+    libfuzzer: true
+    dictionary: /mayhem/tests/fuzz/diskann.dict

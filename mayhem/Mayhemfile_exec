@@ -1,0 +1,9 @@
+project: savantenvs/sqlite-vec
+target: exec
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/exec/testsuite
+cmds:
+  - cmd: /mayhem/exec
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/exec/exec.dict

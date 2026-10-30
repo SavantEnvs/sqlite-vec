@@ -1,0 +1,7 @@
+project: savantenvs/sqlite-vec
+target: vec0_delete_completeness
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/vec0_delete_completeness
+    libfuzzer: true

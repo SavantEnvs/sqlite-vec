@@ -1,0 +1,8 @@
+project: savantenvs/sqlite-vec
+target: diskann_command_inject
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/diskann_command_inject
+    libfuzzer: true
+    dictionary: /mayhem/tests/fuzz/diskann.dict
